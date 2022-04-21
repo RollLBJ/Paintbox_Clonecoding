@@ -1,0 +1,28 @@
+nav,
+nav > ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul,
+nav .wrapper{
+  width: 33%;
+}
+nav ul:first-child{
+  display: flex;
+  justify-content:flex-start;
+}
+nav .wrapper{
+  text-align: center;
+}
+nav ul:last-child{
+  display: flex;
+  justify-content: flex-end;
+}
+nav #logo{
+  width:20%;
+}
+nav li{
+  text-transform: uppercase;
+  padding: 20px;
+}
