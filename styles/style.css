@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,400;1,500;1,600;1,700&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, button, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,6 +49,12 @@ table {
   border-spacing: 0;
 }
 
+nav {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+  margin: 0px -20px 30px -20px;
+}
+
 nav,
 nav > ul {
   display: -webkit-box;
@@ -95,5 +102,151 @@ nav #logo {
 nav li {
   text-transform: uppercase;
   padding: 20px;
+}
+
+body {
+  padding: 20px 50px;
+  font-family: 'Libre Bodoni', serif;
+}
+
+nav {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.article-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.article-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 650px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.article-block__poster,
+.article-block__content {
+  width: 50%;
+}
+
+.article-block__poster {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article-block:nth-child(1) .article-block__poster {
+  background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_-_Blog_Photo-3_960x960_crop_center.jpg?v=1635790977");
+}
+
+.article-block:nth-child(2) .article-block__poster {
+  background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/files/PAINTBOX-UES_0027_copy_960x960_crop_center.jpg?v=1628778916");
+}
+
+.article-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FAF7F6;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.article-block__content > h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 10px;
+}
+
+.article-block__content > p {
+  width: 55%;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.article-block__content > button {
+  padding: 18px 45px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.article-block__content > button:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.article-block__content > button:hover::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  margin-left: 10px;
+  position: absolute;
+  -webkit-animation: movearrow 0.5s ease-out forwards;
+          animation: movearrow 0.5s ease-out forwards;
+}
+
+@-webkit-keyframes movearrow {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 75%;
+  }
+}
+
+@keyframes movearrow {
+  0% {
+    opacity: 0;
+    left: 50%;
+  }
+  100% {
+    opacity: 1;
+    left: 75%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
