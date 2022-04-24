@@ -224,8 +224,8 @@ nav {
   font-size: 25px;
   margin-left: 10px;
   position: absolute;
-  -webkit-animation: movearrow 0.5s ease-out forwards;
-          animation: movearrow 0.5s ease-out forwards;
+  -webkit-animation: movearrow 0.5s ease-in-out forwards, arrowbounce 0.5s ease-in-out 0.5s infinite alternate;
+          animation: movearrow 0.5s ease-in-out forwards, arrowbounce 0.5s ease-in-out 0.5s infinite alternate;
 }
 
 @-webkit-keyframes movearrow {
@@ -248,5 +248,52 @@ nav {
     opacity: 1;
     left: 75%;
   }
+}
+
+@-webkit-keyframes arrowbounce {
+  0% {
+    left: 75%;
+  }
+  100% {
+    left: 79%;
+  }
+}
+
+@keyframes arrowbounce {
+  0% {
+    left: 75%;
+  }
+  100% {
+    left: 79%;
+  }
+}
+
+.photogrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: (300px)[4];
+      grid-template-rows: repeat(4, 300px);
+  height: 1000px;
+}
+
+.photogrid-content {
+  background-color: #FAF7F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  font-size: 20px;
+}
+
+.photogrid-photo {
+  background-image: url("https://cdn.shopify.com/s/files/1/0086/4865/4895/articles/blog-3_5b30676e-e2f6-47f1-862c-ec85ef0a0c2b_1280x805_crop_center.jpg?v=1649444705");
 }
 /*# sourceMappingURL=style.css.map */
